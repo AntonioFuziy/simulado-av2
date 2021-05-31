@@ -78,7 +78,6 @@ SemaphoreHandle_t xSemaphorePago;
 SemaphoreHandle_t xSemaphoreSuccess;
 SemaphoreHandle_t xSemaphoreCancel;
 SemaphoreHandle_t xSemaphoreFail;
-SemaphoreHandle_t xSemaphoreSugarTimeout;
 
 QueueHandle_t xQueueFeedback;
 
@@ -93,7 +92,7 @@ int price = 0;
 
 int sugar_timeout;
 uint16_t pllPreScale = (int) (((float) 32768) / 4.0);
-uint32_t irqRTTvalue = 20;
+uint32_t irqRTTvalue = 40;
 volatile Bool f_rtt_alarme = false;
 /************************************************************************/
 /* handlers                                                             */
@@ -232,6 +231,7 @@ static void task_main(void *pvParameters) {
   char payment_confirmed[] = {'U', 2, 0, 'X'};
   
   f_rtt_alarme = false;
+  
   pio_set(LED_PIO, LED_IDX_MASK);
 
   enum states {EXIBE_TELA1, INICIAL, EXIBE_TELA2, CONFIGURANDO, EXIBE_TELA3, PAGAMENTO, EXIBE_TELA4, PREPARANDO, EXIBE_TELA5, CANCELADO} state;
@@ -262,14 +262,15 @@ static void task_main(void *pvParameters) {
       
     case EXIBE_TELA2:
 	lv_page_2_configurando();
+	RTT_init(pllPreScale, irqRTTvalue);
 	state = CONFIGURANDO;
 	break;
 
 	case CONFIGURANDO:
-	//RTT_init(pllPreScale, irqRTTvalue);
-	/*if(xSemaphoreTake(xSemaphoreSugarTimeout, 1000)){
-		state = INICIAL;
-	}*/
+	if(f_rtt_alarme){
+		state = EXIBE_TELA1;
+		f_rtt_alarme = false;
+	}
 	if( xSemaphoreTake(xSemaphoreOk, 1000) ){
 		produto_acucar = lv_bar_get_value(bar_regulagem);
 		char payment[] = {'U', 1, price, 'X'}; //pacote de cobrança de R$2,00
@@ -308,20 +309,19 @@ static void task_main(void *pvParameters) {
 			state = EXIBE_TELA1;
 		}
 	}
-	if(xSemaphoreTake(xSemaphoreSuccess, 1000)){
-		/*state = EXIBE_TELA4;*/
+	/*if(xSemaphoreTake(xSemaphoreSuccess, 1000)){
+		/ *state = EXIBE_TELA4;* /
 		xSemaphoreGive(xSemaphorePago);
-	}
-	/*if( xSemaphoreTake(xSemaphorePago, 1000) ){
-		state = EXIBE_TELA4;
 	}*/
+	if( xSemaphoreTake(xSemaphorePago, 1000) ){
+		state = EXIBE_TELA4;
+	}
 	/*if(xSemaphoreTake(xSemaphoreFail, 1000)){
 		state = EXIBE_TELA1;
 	}*/
 	/*if(xSemaphoreTake(xSemaphoreCancel, 1000)){
 		state = EXIBE_TELA5;
 	}*/
-	//vTaskDelay(4000);
 	break;
       
     case EXIBE_TELA4:
@@ -735,9 +735,6 @@ int main(void) {
   indev_drv.read_cb = my_input_read;
   /*Register the driver in LVGL and save the created input device object*/
   lv_indev_t * my_indev = lv_indev_drv_register(&indev_drv);
-  
-  /*xSemaphoreSugarTimeout = xSemaphoreCreateBinary();
-  if (xSemaphoreSugarTimeout == NULL) printf("Falha em criar o semaforo \n");*/
 
   if (xTaskCreate(task_lcd, "LCD", TASK_LCD_STACK_SIZE, NULL, TASK_LCD_STACK_PRIORITY, NULL) != pdPASS) {
     printf("Failed to create lcd task\r\n");
