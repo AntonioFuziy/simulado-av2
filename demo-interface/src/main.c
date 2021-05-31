@@ -229,8 +229,6 @@ static void task_main(void *pvParameters) {
   char handshake[] = {'U', 0, 0, 'X'};
   char payment_confirmed[] = {'U', 2, 0, 'X'};
   
-  f_rtt_alarme = false;
-  
   pio_set(LED_PIO, LED_IDX_MASK);
 
   enum states {EXIBE_TELA1, INICIAL, EXIBE_TELA2, CONFIGURANDO, EXIBE_TELA3, PAGAMENTO, EXIBE_TELA4, PREPARANDO, EXIBE_TELA5, CANCELADO} state;
@@ -261,6 +259,7 @@ static void task_main(void *pvParameters) {
       
     case EXIBE_TELA2:
 	lv_page_2_configurando();
+	f_rtt_alarme = false;
 	RTT_init(pllPreScale, irqRTTvalue);
 	state = CONFIGURANDO;
 	break;

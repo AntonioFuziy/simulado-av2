@@ -153,7 +153,6 @@ __lock___env_recursive_mutex
 __lock___sinit_recursive_mutex
                     0x1               d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-lock.o)
 _lv_drv_ll          0xc               src/ASF/thirdparty/lvgl/src/lv_misc/lv_gc.o
-sugar_timeout       0x4               src/main.o
 _lv_obj_style_trans_ll
                     0xc               src/ASF/thirdparty/lvgl/src/lv_misc/lv_gc.o
 label_valor         0x4               src/main.o
@@ -174,8 +173,6 @@ _lv_theme_template_styles
 stdio_base          0x4               src/ASF/common/utils/stdio/write.o
 _lv_img_cache_array
                     0x4               src/ASF/thirdparty/lvgl/src/lv_misc/lv_gc.o
-xSemaphoreSugarTimeout
-                    0x4               src/main.o
 sleepmgr_locks      0x6               src/ASF/common/services/sleepmgr/sam/sleepmgr.o
 xQueueProduto       0x4               src/main.o
 label_aguardando    0x4               src/main.o
@@ -29477,90 +29474,91 @@ LOAD d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-ea
  .text.task_receive
                 0x00438440       0xd4 src/main.o
  .text.task_main
-                0x00438514      0x3a4 src/main.o
+                0x00438514      0x390 src/main.o
  .text.handler_btn_expresso_1
-                0x004388b8       0x38 src/main.o
+                0x004388a4       0x38 src/main.o
  .text.handler_btn_longo_1
-                0x004388f0       0x38 src/main.o
+                0x004388dc       0x38 src/main.o
  .text.handler_btn_curto_1
-                0x00438928       0x38 src/main.o
+                0x00438914       0x38 src/main.o
  .text.handler_btn_pingado_1
-                0x00438960       0x38 src/main.o
+                0x0043894c       0x38 src/main.o
  .text.handler_btn_ok_1
-                0x00438998       0x30 src/main.o
+                0x00438984       0x30 src/main.o
  .text.handler_btn_cancel
-                0x004389c8       0x30 src/main.o
+                0x004389b4       0x30 src/main.o
  .text.handler_btn_plus_2
-                0x004389f8       0x78 src/main.o
+                0x004389e4       0x78 src/main.o
  .text.handler_btn_minus_2
-                0x00438a70       0x78 src/main.o
+                0x00438a5c       0x78 src/main.o
  .text.lv_page_1_inicial
-                0x00438ae8      0x210 src/main.o
-                0x00438ae8                lv_page_1_inicial
+                0x00438ad4      0x210 src/main.o
+                0x00438ad4                lv_page_1_inicial
  .text.lv_page_2_configurando
-                0x00438cf8      0x2d0 src/main.o
-                0x00438cf8                lv_page_2_configurando
+                0x00438ce4      0x2d0 src/main.o
+                0x00438ce4                lv_page_2_configurando
  .text.lv_page_3_pagamento
-                0x00438fc8      0x154 src/main.o
-                0x00438fc8                lv_page_3_pagamento
+                0x00438fb4      0x154 src/main.o
+                0x00438fb4                lv_page_3_pagamento
  .text.lv_page_4_preparando
-                0x0043911c       0xe0 src/main.o
-                0x0043911c                lv_page_4_preparando
+                0x00439108       0xe0 src/main.o
+                0x00439108                lv_page_4_preparando
  .text.lv_page_canceled
-                0x004391fc      0x10c src/main.o
-                0x004391fc                lv_page_canceled
+                0x004391e8      0x10c src/main.o
+                0x004391e8                lv_page_canceled
  .text.send_package
-                0x00439308       0x5c src/main.o
+                0x004392f4       0x5c src/main.o
  .text.configure_lcd
-                0x00439364       0x48 src/main.o
+                0x00439350       0x48 src/main.o
  .text.USART1_init
-                0x004393ac       0xec src/main.o
+                0x00439398       0xec src/main.o
  .text.my_flush_cb
-                0x00439498       0x7c src/main.o
-                0x00439498                my_flush_cb
+                0x00439484       0x7c src/main.o
+                0x00439484                my_flush_cb
  .text.my_input_read
-                0x00439514       0x48 src/main.o
-                0x00439514                my_input_read
- .text.init     0x0043955c       0x28 src/main.o
-                0x0043955c                init
- .text.main     0x00439584      0x1b8 src/main.o
-                0x00439584                main
- .text          0x0043973c       0x30 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m\libgcc.a(_aeabi_uldivmod.o)
-                0x0043973c                __aeabi_uldivmod
- .text          0x0043976c      0x2dc d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m\libgcc.a(_udivmoddi4.o)
-                0x0043976c                __udivmoddi4
- .text          0x00439a48        0x4 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m\libgcc.a(_dvmd_tls.o)
-                0x00439a48                __aeabi_idiv0
-                0x00439a48                __aeabi_ldiv0
+                0x00439500       0x48 src/main.o
+                0x00439500                my_input_read
+ .text.init     0x00439548       0x28 src/main.o
+                0x00439548                init
+ .text.main     0x00439570      0x190 src/main.o
+                0x00439570                main
+ .text          0x00439700       0x30 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m\libgcc.a(_aeabi_uldivmod.o)
+                0x00439700                __aeabi_uldivmod
+ .text          0x00439730      0x2dc d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m\libgcc.a(_udivmoddi4.o)
+                0x00439730                __udivmoddi4
+ .text          0x00439a0c        0x4 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m\libgcc.a(_dvmd_tls.o)
+                0x00439a0c                __aeabi_idiv0
+                0x00439a0c                __aeabi_ldiv0
  .text.__libc_init_array
-                0x00439a4c       0x50 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-init.o)
-                0x00439a4c                __libc_init_array
- .text.iprintf  0x00439a9c       0x28 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-iprintf.o)
-                0x00439a9c                iprintf
- .text.malloc   0x00439ac4       0x10 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-malloc.o)
-                0x00439ac4                malloc
+                0x00439a10       0x50 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-init.o)
+                0x00439a10                __libc_init_array
+ .text.iprintf  0x00439a60       0x28 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-iprintf.o)
+                0x00439a60                iprintf
+ .text.malloc   0x00439a88       0x10 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-malloc.o)
+                0x00439a88                malloc
  .text._malloc_r
-                0x00439ad4      0x560 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-mallocr.o)
-                0x00439ad4                _malloc_r
- .text.memcmp   0x0043a034       0x60 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-memcmp.o)
-                0x0043a034                memcmp
- .text          0x0043a094      0x134 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-memcpy.o)
-                0x0043a094                memcpy
- .text.memset   0x0043a1c8       0x9c d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-memset.o)
-                0x0043a1c8                memset
+                0x00439a98      0x560 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-mallocr.o)
+                0x00439a98                _malloc_r
+ .text.memcmp   0x00439ff8       0x60 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-memcmp.o)
+                0x00439ff8                memcmp
+ .text          0x0043a058      0x134 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-memcpy.o)
+                0x0043a058                memcpy
+ .text.memset   0x0043a18c       0x9c d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-memset.o)
+                0x0043a18c                memset
  .text.__malloc_lock
-                0x0043a264        0xc d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-mlock.o)
-                0x0043a264                __malloc_lock
+                0x0043a228        0xc d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-mlock.o)
+                0x0043a228                __malloc_lock
  .text.__malloc_unlock
-                0x0043a270        0xc d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-mlock.o)
-                0x0043a270                __malloc_unlock
- .text._sbrk_r  0x0043a27c       0x24 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-sbrkr.o)
-                0x0043a27c                _sbrk_r
- .text          0x0043a2a0      0x2dc d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-strcmp.o)
-                0x0043a2a8                strcmp
- .text.strcpy   0x0043a57c       0xbc d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-strcpy.o)
-                0x0043a57c                strcpy
- *fill*         0x0043a638        0x8 
+                0x0043a234        0xc d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-mlock.o)
+                0x0043a234                __malloc_unlock
+ .text._sbrk_r  0x0043a240       0x24 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-sbrkr.o)
+                0x0043a240                _sbrk_r
+ *fill*         0x0043a264       0x1c 
+ .text          0x0043a280      0x2dc d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-strcmp.o)
+                0x0043a288                strcmp
+ .text.strcpy   0x0043a55c       0xbc d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-strcpy.o)
+                0x0043a55c                strcpy
+ *fill*         0x0043a618       0x28 
  .text          0x0043a640       0xdc d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-strlen.o)
                 0x0043a640                strlen
  .text.__sprint_r.part.0
@@ -30007,7 +30005,7 @@ LOAD d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-ea
                 0x20400a88                . = ALIGN (0x4)
                 0x20400a88                _erelocate = .
 
-.bss            0x20400a88    0x3b170 load address 0x00457ecc
+.bss            0x20400a88    0x3b168 load address 0x00457ecc
                 0x20400a88                . = ALIGN (0x4)
                 0x20400a88                _sbss = .
                 0x20400a88                _szero = .
@@ -30246,56 +30244,54 @@ LOAD d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-ea
  COMMON         0x2043bb8c        0x8 src/ASF/common/utils/stdio/write.o
                 0x2043bb8c                ptr_put
                 0x2043bb90                stdio_base
- COMMON         0x2043bb94       0x3c src/main.o
+ COMMON         0x2043bb94       0x34 src/main.o
                 0x2043bb94                xSemaphoreSuccess
                 0x2043bb98                xSemaphoreOk
-                0x2043bb9c                sugar_timeout
-                0x2043bba0                label_valor
-                0x2043bba4                xQueueFeedback
-                0x2043bba8                xSemaphoreCancel
-                0x2043bbac                xSemaphoreSugarTimeout
-                0x2043bbb0                xQueueProduto
-                0x2043bbb4                label_aguardando
-                0x2043bbb8                label_valor_regulagem
-                0x2043bbbc                xSemaphorePago
-                0x2043bbc0                labelDebug
-                0x2043bbc4                xQueueRx
-                0x2043bbc8                bar_regulagem
-                0x2043bbcc                xSemaphoreFail
- COMMON         0x2043bbd0       0x21 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-lock.o)
-                0x2043bbd0                __lock___atexit_recursive_mutex
-                0x2043bbd4                __lock___arc4random_mutex
-                0x2043bbd8                __lock___env_recursive_mutex
-                0x2043bbdc                __lock___sinit_recursive_mutex
-                0x2043bbe0                __lock___malloc_recursive_mutex
-                0x2043bbe4                __lock___at_quick_exit_mutex
-                0x2043bbe8                __lock___dd_hash_mutex
-                0x2043bbec                __lock___tz_mutex
-                0x2043bbf0                __lock___sfp_recursive_mutex
- *fill*         0x2043bbf1        0x3 
- COMMON         0x2043bbf4        0x4 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-reent.o)
-                0x2043bbf4                errno
-                0x2043bbf8                . = ALIGN (0x4)
-                0x2043bbf8                _ebss = .
-                0x2043bbf8                _ezero = .
+                0x2043bb9c                label_valor
+                0x2043bba0                xQueueFeedback
+                0x2043bba4                xSemaphoreCancel
+                0x2043bba8                xQueueProduto
+                0x2043bbac                label_aguardando
+                0x2043bbb0                label_valor_regulagem
+                0x2043bbb4                xSemaphorePago
+                0x2043bbb8                labelDebug
+                0x2043bbbc                xQueueRx
+                0x2043bbc0                bar_regulagem
+                0x2043bbc4                xSemaphoreFail
+ COMMON         0x2043bbc8       0x21 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-lock.o)
+                0x2043bbc8                __lock___atexit_recursive_mutex
+                0x2043bbcc                __lock___arc4random_mutex
+                0x2043bbd0                __lock___env_recursive_mutex
+                0x2043bbd4                __lock___sinit_recursive_mutex
+                0x2043bbd8                __lock___malloc_recursive_mutex
+                0x2043bbdc                __lock___at_quick_exit_mutex
+                0x2043bbe0                __lock___dd_hash_mutex
+                0x2043bbe4                __lock___tz_mutex
+                0x2043bbe8                __lock___sfp_recursive_mutex
+ *fill*         0x2043bbe9        0x3 
+ COMMON         0x2043bbec        0x4 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-reent.o)
+                0x2043bbec                errno
+                0x2043bbf0                . = ALIGN (0x4)
+                0x2043bbf0                _ebss = .
+                0x2043bbf0                _ezero = .
 
-.stack          0x2043bbf8     0x2000 load address 0x0049303c
-                0x2043bbf8                . = ALIGN (0x8)
-                0x2043bbf8                _sstack = .
-                0x2043dbf8                . = (. + STACK_SIZE)
- *fill*         0x2043bbf8     0x2000 
-                0x2043dbf8                . = ALIGN (0x8)
-                0x2043dbf8                _estack = .
+.stack          0x2043bbf0     0x2000 load address 0x00493034
+                0x2043bbf0                . = ALIGN (0x8)
+                0x2043bbf0                _sstack = .
+                0x2043dbf0                . = (. + STACK_SIZE)
+ *fill*         0x2043bbf0     0x2000 
+                0x2043dbf0                . = ALIGN (0x8)
+                0x2043dbf0                _estack = .
 
-.heap           0x2043dbf8      0x200 load address 0x0049503c
-                0x2043dbf8                . = ALIGN (0x8)
-                0x2043dbf8                _sheap = .
-                0x2043ddf8                . = (. + HEAP_SIZE)
- *fill*         0x2043dbf8      0x200 
-                0x2043ddf8                . = ALIGN (0x8)
-                0x2043ddf8                _eheap = .
-                0x2043ddf8                . = ALIGN (0x4)
-                0x2043ddf8                _end = .
+.heap           0x2043dbf0      0x200 load address 0x00495034
+                0x2043dbf0                . = ALIGN (0x8)
+                0x2043dbf0                _sheap = .
+                0x2043ddf0                . = (. + HEAP_SIZE)
+ *fill*         0x2043dbf0      0x200 
+                0x2043ddf0                . = ALIGN (0x8)
+                0x2043ddf0                _eheap = .
+                0x2043ddf0                . = ALIGN (0x4)
+                0x2043ddf0                _end = .
                 0x2045ffff                _ram_end_ = ((ORIGIN (ram) + LENGTH (ram)) - 0x1)
 OUTPUT(demo-interface.elf elf32-littlearm)
 
@@ -30626,7 +30622,7 @@ OUTPUT(demo-interface.elf elf32-littlearm)
  .comment       0x00000059       0x5a src/ASF/sam/utils/syscalls/gcc/syscalls.o
  .comment       0x00000059       0x5a src/main.o
 
-.debug_info     0x00000000    0x9559c
+.debug_info     0x00000000    0x9555d
  .debug_info    0x00000000      0xcaf src/ASF/sam/drivers/rtt/rtt.o
  .debug_info    0x00000caf     0x125c src/cafe_image.o
  .debug_info    0x00001f0b     0x1d6d src/touch/touch.o
@@ -30699,7 +30695,7 @@ OUTPUT(demo-interface.elf elf32-littlearm)
  .debug_info    0x0008d348     0x1611 src/ASF/sam/utils/cmsis/same70/source/templates/gcc/startup_same70.o
  .debug_info    0x0008e959      0x5d2 src/ASF/sam/utils/cmsis/same70/source/templates/system_same70.o
  .debug_info    0x0008ef2b      0xdbb src/ASF/sam/utils/syscalls/gcc/syscalls.o
- .debug_info    0x0008fce6     0x58b6 src/main.o
+ .debug_info    0x0008fce6     0x5877 src/main.o
 
 .debug_abbrev   0x00000000     0xcaaf
  .debug_abbrev  0x00000000      0x203 src/ASF/sam/drivers/rtt/rtt.o
@@ -31249,7 +31245,7 @@ OUTPUT(demo-interface.elf elf32-littlearm)
  .debug_macro   0x000197c4      0x1e1 src/main.o
  .debug_macro   0x000199a5       0xd6 src/main.o
 
-.debug_line     0x00000000    0x451bd
+.debug_line     0x00000000    0x451b1
  .debug_line    0x00000000      0xa41 src/ASF/sam/drivers/rtt/rtt.o
  .debug_line    0x00000a41     0x129b src/cafe_image.o
  .debug_line    0x00001cdc     0x13cb src/touch/touch.o
@@ -31322,9 +31318,9 @@ OUTPUT(demo-interface.elf elf32-littlearm)
  .debug_line    0x00041365      0xa86 src/ASF/sam/utils/cmsis/same70/source/templates/gcc/startup_same70.o
  .debug_line    0x00041deb      0x7e5 src/ASF/sam/utils/cmsis/same70/source/templates/system_same70.o
  .debug_line    0x000425d0      0x3bb src/ASF/sam/utils/syscalls/gcc/syscalls.o
- .debug_line    0x0004298b     0x2832 src/main.o
+ .debug_line    0x0004298b     0x2826 src/main.o
 
-.debug_str      0x00000000    0xafc03
+.debug_str      0x00000000    0xafbde
  .debug_str     0x00000000    0x87ef4 src/ASF/sam/drivers/rtt/rtt.o
                               0x88618 (size before relaxing)
  .debug_str     0x00087ef4     0x5677 src/cafe_image.o
@@ -31469,8 +31465,8 @@ OUTPUT(demo-interface.elf elf32-littlearm)
                               0x7849c (size before relaxing)
  .debug_str     0x000ae073      0x692 src/ASF/sam/utils/syscalls/gcc/syscalls.o
                                0x7481 (size before relaxing)
- .debug_str     0x000ae705     0x14fe src/main.o
-                              0x9d461 (size before relaxing)
+ .debug_str     0x000ae705     0x14d9 src/main.o
+                              0x9d43c (size before relaxing)
 
 .debug_frame    0x00000000     0xc550
  .debug_frame   0x00000000       0xec src/ASF/sam/drivers/rtt/rtt.o
@@ -35549,7 +35545,6 @@ strlen                                            d:/programas/7.0/toolchain/arm
                                                   src/ASF/thirdparty/freertos/freertos-8.2.3/Source/tasks.o
 strncpy                                           d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-strncpy.o)
                                                   src/ASF/thirdparty/lvgl/src/lv_widgets/lv_chart.o
-sugar_timeout                                     src/main.o
 sysclk_disable_usb                                src/ASF/common/services/clock/same70/sysclk.o
 sysclk_enable_usb                                 src/ASF/common/services/clock/same70/sysclk.o
 sysclk_init                                       src/ASF/common/services/clock/same70/sysclk.o
@@ -35883,7 +35878,6 @@ xSemaphoreFail                                    src/main.o
 xSemaphoreOk                                      src/main.o
 xSemaphorePago                                    src/main.o
 xSemaphoreSuccess                                 src/main.o
-xSemaphoreSugarTimeout                            src/main.o
 xTaskCheckForTimeOut                              src/ASF/thirdparty/freertos/freertos-8.2.3/Source/tasks.o
                                                   src/ASF/thirdparty/freertos/freertos-8.2.3/Source/queue.o
 xTaskGenericCreate                                src/ASF/thirdparty/freertos/freertos-8.2.3/Source/tasks.o
