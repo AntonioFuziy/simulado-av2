@@ -90,7 +90,6 @@ lv_obj_t * label_valor;
 
 int price = 0;
 
-int sugar_timeout;
 uint16_t pllPreScale = (int) (((float) 32768) / 4.0);
 uint32_t irqRTTvalue = 40;
 volatile Bool f_rtt_alarme = false;
