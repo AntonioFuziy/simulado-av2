@@ -26701,7 +26701,7 @@ LOAD d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-ea
                 0x2045fffc                __ram_end__ = ((ORIGIN (ram) + LENGTH (ram)) - 0x4)
                 0x00000200                HEAP_SIZE = DEFINED (HEAP_SIZE)?HEAP_SIZE:0x200
 
-.text           0x00400000    0x5713c
+.text           0x00400000    0x5717c
                 0x00400000                . = ALIGN (0x4)
                 0x00400000                _sfixed = .
  *(.vectors .vectors.*)
@@ -29476,455 +29476,454 @@ LOAD d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-ea
  .text.task_receive
                 0x004381e4       0xc8 src/main.o
  .text.task_main
-                0x004382ac      0x338 src/main.o
+                0x004382ac      0x368 src/main.o
  .text.handler_btn_expresso_1
-                0x004385e4       0x38 src/main.o
+                0x00438614       0x38 src/main.o
  .text.handler_btn_longo_1
-                0x0043861c       0x38 src/main.o
+                0x0043864c       0x38 src/main.o
  .text.handler_btn_curto_1
-                0x00438654       0x38 src/main.o
+                0x00438684       0x38 src/main.o
  .text.handler_btn_pingado_1
-                0x0043868c       0x38 src/main.o
+                0x004386bc       0x38 src/main.o
  .text.handler_btn_ok_1
-                0x004386c4       0x30 src/main.o
- .text.handler_btn_cancel
                 0x004386f4       0x30 src/main.o
+ .text.handler_btn_cancel
+                0x00438724       0x30 src/main.o
  .text.handler_btn_plus_2
-                0x00438724       0x78 src/main.o
+                0x00438754       0x78 src/main.o
  .text.handler_btn_minus_2
-                0x0043879c       0x78 src/main.o
+                0x004387cc       0x78 src/main.o
  .text.lv_page_1_inicial
-                0x00438814      0x210 src/main.o
-                0x00438814                lv_page_1_inicial
+                0x00438844      0x210 src/main.o
+                0x00438844                lv_page_1_inicial
  .text.lv_page_2_configurando
-                0x00438a24      0x2d0 src/main.o
-                0x00438a24                lv_page_2_configurando
+                0x00438a54      0x2d0 src/main.o
+                0x00438a54                lv_page_2_configurando
  .text.lv_page_3_pagamento
-                0x00438cf4      0x154 src/main.o
-                0x00438cf4                lv_page_3_pagamento
+                0x00438d24      0x154 src/main.o
+                0x00438d24                lv_page_3_pagamento
  .text.lv_page_4_preparando
-                0x00438e48       0xe0 src/main.o
-                0x00438e48                lv_page_4_preparando
+                0x00438e78       0xe0 src/main.o
+                0x00438e78                lv_page_4_preparando
  .text.lv_page_canceled
-                0x00438f28      0x10c src/main.o
-                0x00438f28                lv_page_canceled
+                0x00438f58      0x10c src/main.o
+                0x00438f58                lv_page_canceled
  .text.send_package
-                0x00439034       0x5c src/main.o
+                0x00439064       0x5c src/main.o
  .text.configure_lcd
-                0x00439090       0x48 src/main.o
+                0x004390c0       0x48 src/main.o
  .text.USART1_init
-                0x004390d8       0xec src/main.o
+                0x00439108       0xec src/main.o
  .text.my_flush_cb
-                0x004391c4       0x7c src/main.o
-                0x004391c4                my_flush_cb
+                0x004391f4       0x7c src/main.o
+                0x004391f4                my_flush_cb
  .text.my_input_read
-                0x00439240       0x48 src/main.o
-                0x00439240                my_input_read
- .text.init     0x00439288       0x28 src/main.o
-                0x00439288                init
- .text.main     0x004392b0      0x17c src/main.o
-                0x004392b0                main
- .text          0x0043942c       0x30 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m\libgcc.a(_aeabi_uldivmod.o)
-                0x0043942c                __aeabi_uldivmod
- .text          0x0043945c      0x2dc d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m\libgcc.a(_udivmoddi4.o)
-                0x0043945c                __udivmoddi4
- .text          0x00439738        0x4 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m\libgcc.a(_dvmd_tls.o)
-                0x00439738                __aeabi_idiv0
-                0x00439738                __aeabi_ldiv0
+                0x00439270       0x48 src/main.o
+                0x00439270                my_input_read
+ .text.init     0x004392b8       0x28 src/main.o
+                0x004392b8                init
+ .text.main     0x004392e0      0x17c src/main.o
+                0x004392e0                main
+ .text          0x0043945c       0x30 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m\libgcc.a(_aeabi_uldivmod.o)
+                0x0043945c                __aeabi_uldivmod
+ .text          0x0043948c      0x2dc d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m\libgcc.a(_udivmoddi4.o)
+                0x0043948c                __udivmoddi4
+ .text          0x00439768        0x4 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m\libgcc.a(_dvmd_tls.o)
+                0x00439768                __aeabi_idiv0
+                0x00439768                __aeabi_ldiv0
  .text.__libc_init_array
-                0x0043973c       0x50 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-init.o)
-                0x0043973c                __libc_init_array
- .text.iprintf  0x0043978c       0x28 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-iprintf.o)
-                0x0043978c                iprintf
- .text.malloc   0x004397b4       0x10 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-malloc.o)
-                0x004397b4                malloc
+                0x0043976c       0x50 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-init.o)
+                0x0043976c                __libc_init_array
+ .text.iprintf  0x004397bc       0x28 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-iprintf.o)
+                0x004397bc                iprintf
+ .text.malloc   0x004397e4       0x10 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-malloc.o)
+                0x004397e4                malloc
  .text._malloc_r
-                0x004397c4      0x560 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-mallocr.o)
-                0x004397c4                _malloc_r
- .text.memcmp   0x00439d24       0x60 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-memcmp.o)
-                0x00439d24                memcmp
- .text          0x00439d84      0x134 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-memcpy.o)
-                0x00439d84                memcpy
- .text.memset   0x00439eb8       0x9c d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-memset.o)
-                0x00439eb8                memset
+                0x004397f4      0x560 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-mallocr.o)
+                0x004397f4                _malloc_r
+ .text.memcmp   0x00439d54       0x60 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-memcmp.o)
+                0x00439d54                memcmp
+ .text          0x00439db4      0x134 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-memcpy.o)
+                0x00439db4                memcpy
+ .text.memset   0x00439ee8       0x9c d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-memset.o)
+                0x00439ee8                memset
  .text.__malloc_lock
-                0x00439f54        0xc d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-mlock.o)
-                0x00439f54                __malloc_lock
+                0x00439f84        0xc d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-mlock.o)
+                0x00439f84                __malloc_lock
  .text.__malloc_unlock
-                0x00439f60        0xc d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-mlock.o)
-                0x00439f60                __malloc_unlock
- .text._sbrk_r  0x00439f6c       0x24 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-sbrkr.o)
-                0x00439f6c                _sbrk_r
- *fill*         0x00439f90       0x10 
- .text          0x00439fa0      0x2dc d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-strcmp.o)
-                0x00439fa8                strcmp
- .text.strcpy   0x0043a27c       0xbc d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-strcpy.o)
-                0x0043a27c                strcpy
- *fill*         0x0043a338        0x8 
- .text          0x0043a340       0xdc d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-strlen.o)
-                0x0043a340                strlen
+                0x00439f90        0xc d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-mlock.o)
+                0x00439f90                __malloc_unlock
+ .text._sbrk_r  0x00439f9c       0x24 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-sbrkr.o)
+                0x00439f9c                _sbrk_r
+ .text          0x00439fc0      0x2dc d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-strcmp.o)
+                0x00439fc8                strcmp
+ .text.strcpy   0x0043a29c       0xbc d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-strcpy.o)
+                0x0043a29c                strcpy
+ *fill*         0x0043a358       0x28 
+ .text          0x0043a380       0xdc d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-strlen.o)
+                0x0043a380                strlen
  .text.__sprint_r.part.0
-                0x0043a41c       0x80 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-vfiprintf.o)
+                0x0043a45c       0x80 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-vfiprintf.o)
  .text._vfiprintf_r
-                0x0043a49c      0xc90 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-vfiprintf.o)
-                0x0043a49c                _vfiprintf_r
+                0x0043a4dc      0xc90 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-vfiprintf.o)
+                0x0043a4dc                _vfiprintf_r
  .text.__sbprintf
-                0x0043b12c       0x84 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-vfiprintf.o)
+                0x0043b16c       0x84 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-vfiprintf.o)
  .text.__swsetup_r
-                0x0043b1b0       0xc8 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-wsetup.o)
-                0x0043b1b0                __swsetup_r
+                0x0043b1f0       0xc8 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-wsetup.o)
+                0x0043b1f0                __swsetup_r
  .text.startup.register_fini
-                0x0043b278       0x14 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-__call_atexit.o)
- .text.atexit   0x0043b28c        0xc d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-atexit.o)
-                0x0043b28c                atexit
+                0x0043b2b8       0x14 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-__call_atexit.o)
+ .text.atexit   0x0043b2cc        0xc d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-atexit.o)
+                0x0043b2cc                atexit
  .text.__sflush_r
-                0x0043b298      0x140 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-fflush.o)
-                0x0043b298                __sflush_r
+                0x0043b2d8      0x140 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-fflush.o)
+                0x0043b2d8                __sflush_r
  .text._fflush_r
-                0x0043b3d8       0x54 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-fflush.o)
-                0x0043b3d8                _fflush_r
+                0x0043b418       0x54 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-fflush.o)
+                0x0043b418                _fflush_r
  .text._cleanup_r
-                0x0043b42c        0xc d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-findfp.o)
-                0x0043b42c                _cleanup_r
+                0x0043b46c        0xc d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-findfp.o)
+                0x0043b46c                _cleanup_r
  .text.std.isra.0
-                0x0043b438       0x50 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-findfp.o)
- .text.__sinit  0x0043b488       0x58 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-findfp.o)
-                0x0043b488                __sinit
+                0x0043b478       0x50 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-findfp.o)
+ .text.__sinit  0x0043b4c8       0x58 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-findfp.o)
+                0x0043b4c8                __sinit
  .text.__sfp_lock_acquire
-                0x0043b4e0        0xc d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-findfp.o)
-                0x0043b4e0                __sfp_lock_acquire
+                0x0043b520        0xc d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-findfp.o)
+                0x0043b520                __sfp_lock_acquire
  .text.__sfp_lock_release
-                0x0043b4ec        0xc d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-findfp.o)
-                0x0043b4ec                __sfp_lock_release
+                0x0043b52c        0xc d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-findfp.o)
+                0x0043b52c                __sfp_lock_release
  .text.__libc_fini_array
-                0x0043b4f8       0x34 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-fini.o)
-                0x0043b4f8                __libc_fini_array
+                0x0043b538       0x34 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-fini.o)
+                0x0043b538                __libc_fini_array
  .text.__fputwc
-                0x0043b52c       0xa0 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-fputwc.o)
-                0x0043b52c                __fputwc
+                0x0043b56c       0xa0 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-fputwc.o)
+                0x0043b56c                __fputwc
  .text._fputwc_r
-                0x0043b5cc       0x68 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-fputwc.o)
-                0x0043b5cc                _fputwc_r
+                0x0043b60c       0x68 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-fputwc.o)
+                0x0043b60c                _fputwc_r
  .text._malloc_trim_r
-                0x0043b634       0xa0 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-freer.o)
-                0x0043b634                _malloc_trim_r
- .text._free_r  0x0043b6d4      0x1cc d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-freer.o)
-                0x0043b6d4                _free_r
+                0x0043b674       0xa0 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-freer.o)
+                0x0043b674                _malloc_trim_r
+ .text._free_r  0x0043b714      0x1cc d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-freer.o)
+                0x0043b714                _free_r
  .text.__sfvwrite_r
-                0x0043b8a0      0x2f0 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-fvwrite.o)
-                0x0043b8a0                __sfvwrite_r
+                0x0043b8e0      0x2f0 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-fvwrite.o)
+                0x0043b8e0                __sfvwrite_r
  .text._fwalk_reent
-                0x0043bb90       0x54 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-fwalk.o)
-                0x0043bb90                _fwalk_reent
+                0x0043bbd0       0x54 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-fwalk.o)
+                0x0043bbd0                _fwalk_reent
  .text.__locale_mb_cur_max
-                0x0043bbe4       0x1c d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-locale.o)
-                0x0043bbe4                __locale_mb_cur_max
+                0x0043bc24       0x1c d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-locale.o)
+                0x0043bc24                __locale_mb_cur_max
  .text.__retarget_lock_init_recursive
-                0x0043bc00        0x4 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-lock.o)
-                0x0043bc00                __retarget_lock_init_recursive
+                0x0043bc40        0x4 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-lock.o)
+                0x0043bc40                __retarget_lock_init_recursive
  .text.__retarget_lock_close_recursive
-                0x0043bc04        0x4 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-lock.o)
-                0x0043bc04                __retarget_lock_close_recursive
+                0x0043bc44        0x4 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-lock.o)
+                0x0043bc44                __retarget_lock_close_recursive
  .text.__retarget_lock_acquire_recursive
-                0x0043bc08        0x4 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-lock.o)
-                0x0043bc08                __retarget_lock_acquire_recursive
+                0x0043bc48        0x4 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-lock.o)
+                0x0043bc48                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x0043bc0c        0x4 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-lock.o)
-                0x0043bc0c                __retarget_lock_release_recursive
+                0x0043bc4c        0x4 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-lock.o)
+                0x0043bc4c                __retarget_lock_release_recursive
  .text.__swhatbuf_r
-                0x0043bc10       0x5c d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-makebuf.o)
-                0x0043bc10                __swhatbuf_r
+                0x0043bc50       0x5c d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-makebuf.o)
+                0x0043bc50                __swhatbuf_r
  .text.__smakebuf_r
-                0x0043bc6c       0x94 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-makebuf.o)
-                0x0043bc6c                __smakebuf_r
+                0x0043bcac       0x94 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-makebuf.o)
+                0x0043bcac                __smakebuf_r
  .text.__ascii_mbtowc
-                0x0043bd00       0x2c d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-mbtowc_r.o)
-                0x0043bd00                __ascii_mbtowc
- *fill*         0x0043bd2c        0x4 
- .text          0x0043bd30       0xa0 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-memchr.o)
-                0x0043bd30                memchr
- .text.memmove  0x0043bdd0       0xc8 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-memmove.o)
-                0x0043bdd0                memmove
+                0x0043bd40       0x2c d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-mbtowc_r.o)
+                0x0043bd40                __ascii_mbtowc
+ *fill*         0x0043bd6c        0x4 
+ .text          0x0043bd70       0xa0 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-memchr.o)
+                0x0043bd70                memchr
+ .text.memmove  0x0043be10       0xc8 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-memmove.o)
+                0x0043be10                memmove
  .text._realloc_r
-                0x0043be98      0x34c d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-reallocr.o)
-                0x0043be98                _realloc_r
- .text.__sread  0x0043c1e4       0x24 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-stdio.o)
-                0x0043c1e4                __sread
+                0x0043bed8      0x34c d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-reallocr.o)
+                0x0043bed8                _realloc_r
+ .text.__sread  0x0043c224       0x24 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-stdio.o)
+                0x0043c224                __sread
  .text.__swrite
-                0x0043c208       0x3c d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-stdio.o)
-                0x0043c208                __swrite
- .text.__sseek  0x0043c244       0x20 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-stdio.o)
-                0x0043c244                __sseek
+                0x0043c248       0x3c d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-stdio.o)
+                0x0043c248                __swrite
+ .text.__sseek  0x0043c284       0x20 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-stdio.o)
+                0x0043c284                __sseek
  .text.__sclose
-                0x0043c264        0x8 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-stdio.o)
-                0x0043c264                __sclose
+                0x0043c2a4        0x8 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-stdio.o)
+                0x0043c2a4                __sclose
  .text.__swbuf_r
-                0x0043c26c       0xb0 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-wbuf.o)
-                0x0043c26c                __swbuf_r
+                0x0043c2ac       0xb0 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-wbuf.o)
+                0x0043c2ac                __swbuf_r
  .text._wcrtomb_r
-                0x0043c31c       0x54 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-wcrtomb.o)
-                0x0043c31c                _wcrtomb_r
+                0x0043c35c       0x54 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-wcrtomb.o)
+                0x0043c35c                _wcrtomb_r
  .text.__ascii_wctomb
-                0x0043c370       0x1c d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-wctomb_r.o)
-                0x0043c370                __ascii_wctomb
+                0x0043c3b0       0x1c d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-wctomb_r.o)
+                0x0043c3b0                __ascii_wctomb
  .text._write_r
-                0x0043c38c       0x2c d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-writer.o)
-                0x0043c38c                _write_r
+                0x0043c3cc       0x2c d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-writer.o)
+                0x0043c3cc                _write_r
  .text.__register_exitproc
-                0x0043c3b8       0xc4 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-__atexit.o)
-                0x0043c3b8                __register_exitproc
+                0x0043c3f8       0xc4 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-__atexit.o)
+                0x0043c3f8                __register_exitproc
  .text._close_r
-                0x0043c47c       0x24 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-closer.o)
-                0x0043c47c                _close_r
+                0x0043c4bc       0x24 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-closer.o)
+                0x0043c4bc                _close_r
  .text._fclose_r
-                0x0043c4a0       0xc4 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-fclose.o)
-                0x0043c4a0                _fclose_r
+                0x0043c4e0       0xc4 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-fclose.o)
+                0x0043c4e0                _fclose_r
  .text._fstat_r
-                0x0043c564       0x28 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-fstatr.o)
-                0x0043c564                _fstat_r
+                0x0043c5a4       0x28 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-fstatr.o)
+                0x0043c5a4                _fstat_r
  .text._isatty_r
-                0x0043c58c       0x24 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-isattyr.o)
-                0x0043c58c                _isatty_r
+                0x0043c5cc       0x24 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-isattyr.o)
+                0x0043c5cc                _isatty_r
  .text._lseek_r
-                0x0043c5b0       0x2c d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-lseekr.o)
-                0x0043c5b0                _lseek_r
- .text._read_r  0x0043c5dc       0x2c d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-readr.o)
-                0x0043c5dc                _read_r
+                0x0043c5f0       0x2c d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-lseekr.o)
+                0x0043c5f0                _lseek_r
+ .text._read_r  0x0043c61c       0x2c d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-readr.o)
+                0x0043c61c                _read_r
  *(.glue_7t)
- .glue_7t       0x0043c608        0x0 linker stubs
+ .glue_7t       0x0043c648        0x0 linker stubs
  *(.glue_7)
- .glue_7        0x0043c608        0x0 linker stubs
+ .glue_7        0x0043c648        0x0 linker stubs
  *(.rodata .rodata* .gnu.linkonce.r.*)
  .rodata.cafe_image_map
-                0x0043c608     0x1130 src/cafe_image.o
-                0x0043c608                cafe_image_map
+                0x0043c648     0x1130 src/cafe_image.o
+                0x0043c648                cafe_image_map
  .rodata.cafe_image
-                0x0043d738        0xc src/cafe_image.o
-                0x0043d738                cafe_image
- .rodata        0x0043d744       0x17 src/ASF/thirdparty/freertos/freertos-8.2.3/Source/tasks.o
- *fill*         0x0043d75b        0x1 
- .rodata        0x0043d75c        0xd src/ASF/thirdparty/freertos/freertos-8.2.3/Source/timers.o
- *fill*         0x0043d769        0x3 
- .rodata        0x0043d76c        0xe src/ASF/thirdparty/lvgl/src/lv_core/lv_group.o
- *fill*         0x0043d77a        0x2 
- .rodata        0x0043d77c       0x2f src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
- *fill*         0x0043d7ab        0x1 
- .rodata        0x0043d7ac        0xe src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
+                0x0043d778        0xc src/cafe_image.o
+                0x0043d778                cafe_image
+ .rodata        0x0043d784       0x17 src/ASF/thirdparty/freertos/freertos-8.2.3/Source/tasks.o
+ *fill*         0x0043d79b        0x1 
+ .rodata        0x0043d79c        0xd src/ASF/thirdparty/freertos/freertos-8.2.3/Source/timers.o
+ *fill*         0x0043d7a9        0x3 
+ .rodata        0x0043d7ac        0xe src/ASF/thirdparty/lvgl/src/lv_core/lv_group.o
  *fill*         0x0043d7ba        0x2 
- .rodata        0x0043d7bc        0xa src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_img.o
- *fill*         0x0043d7c6        0x2 
+ .rodata        0x0043d7bc       0x2f src/ASF/thirdparty/lvgl/src/lv_core/lv_obj.o
+ *fill*         0x0043d7eb        0x1 
+ .rodata        0x0043d7ec        0xe src/ASF/thirdparty/lvgl/src/lv_core/lv_style.o
+ *fill*         0x0043d7fa        0x2 
+ .rodata        0x0043d7fc        0xa src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_img.o
+ *fill*         0x0043d806        0x2 
  .rodata._lv_bpp1_opa_table
-                0x0043d7c8        0x2 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_label.o
-                0x0043d7c8                _lv_bpp1_opa_table
- *fill*         0x0043d7ca        0x2 
+                0x0043d808        0x2 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_label.o
+                0x0043d808                _lv_bpp1_opa_table
+ *fill*         0x0043d80a        0x2 
  .rodata._lv_bpp2_opa_table
-                0x0043d7cc        0x4 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_label.o
-                0x0043d7cc                _lv_bpp2_opa_table
+                0x0043d80c        0x4 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_label.o
+                0x0043d80c                _lv_bpp2_opa_table
  .rodata._lv_bpp4_opa_table
-                0x0043d7d0       0x10 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_label.o
-                0x0043d7d0                _lv_bpp4_opa_table
+                0x0043d810       0x10 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_label.o
+                0x0043d810                _lv_bpp4_opa_table
  .rodata._lv_bpp8_opa_table
-                0x0043d7e0      0x100 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_label.o
-                0x0043d7e0                _lv_bpp8_opa_table
+                0x0043d820      0x100 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_label.o
+                0x0043d820                _lv_bpp8_opa_table
  .rodata.wcorr.10561
-                0x0043d8e0       0x21 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_line.o
- *fill*         0x0043d901        0x3 
- .rodata        0x0043d904        0x2 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_rect.o
- *fill*         0x0043d906        0x2 
- .rodata        0x0043d908       0x14 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_buf.o
- .rodata        0x0043d91c        0xe src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_cache.o
- *fill*         0x0043d92a        0x2 
- .rodata        0x0043d92c       0x28 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_decoder.o
- .rodata        0x0043d954        0xe src/ASF/thirdparty/lvgl/src/lv_font/lv_font_fmt_txt.o
- *fill*         0x0043d962        0x2 
+                0x0043d920       0x21 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_line.o
+ *fill*         0x0043d941        0x3 
+ .rodata        0x0043d944        0x2 src/ASF/thirdparty/lvgl/src/lv_draw/lv_draw_rect.o
+ *fill*         0x0043d946        0x2 
+ .rodata        0x0043d948       0x14 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_buf.o
+ .rodata        0x0043d95c        0xe src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_cache.o
+ *fill*         0x0043d96a        0x2 
+ .rodata        0x0043d96c       0x28 src/ASF/thirdparty/lvgl/src/lv_draw/lv_img_decoder.o
+ .rodata        0x0043d994        0xe src/ASF/thirdparty/lvgl/src/lv_font/lv_font_fmt_txt.o
+ *fill*         0x0043d9a2        0x2 
  .rodata.gylph_bitmap
-                0x0043d964     0x219a src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_14.o
- *fill*         0x0043fafe        0x2 
+                0x0043d9a4     0x219a src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_14.o
+ *fill*         0x0043fb3e        0x2 
  .rodata.glyph_dsc
-                0x0043fb00      0x4d8 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_14.o
+                0x0043fb40      0x4d8 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_14.o
  .rodata.unicode_list_1
-                0x0043ffd8       0x76 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_14.o
- *fill*         0x0044004e        0x2 
- .rodata.cmaps  0x00440050       0x28 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_14.o
+                0x00440018       0x76 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_14.o
+ *fill*         0x0044008e        0x2 
+ .rodata.cmaps  0x00440090       0x28 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_14.o
  .rodata.kern_left_class_mapping
-                0x00440078       0x9b src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_14.o
- *fill*         0x00440113        0x1 
+                0x004400b8       0x9b src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_14.o
+ *fill*         0x00440153        0x1 
  .rodata.kern_right_class_mapping
-                0x00440114       0x9b src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_14.o
- *fill*         0x004401af        0x1 
+                0x00440154       0x9b src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_14.o
+ *fill*         0x004401ef        0x1 
  .rodata.kern_class_values
-                0x004401b0      0xbad src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_14.o
- *fill*         0x00440d5d        0x3 
+                0x004401f0      0xbad src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_14.o
+ *fill*         0x00440d9d        0x3 
  .rodata.kern_classes
-                0x00440d60       0x10 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_14.o
+                0x00440da0       0x10 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_14.o
  .rodata.gylph_bitmap
-                0x00440d70     0x4098 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_20.o
+                0x00440db0     0x4098 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_20.o
  .rodata.glyph_dsc
-                0x00444e08      0x4d8 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_20.o
+                0x00444e48      0x4d8 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_20.o
  .rodata.unicode_list_1
-                0x004452e0       0x76 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_20.o
- *fill*         0x00445356        0x2 
- .rodata.cmaps  0x00445358       0x28 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_20.o
+                0x00445320       0x76 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_20.o
+ *fill*         0x00445396        0x2 
+ .rodata.cmaps  0x00445398       0x28 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_20.o
  .rodata.kern_left_class_mapping
-                0x00445380       0x9b src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_20.o
- *fill*         0x0044541b        0x1 
+                0x004453c0       0x9b src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_20.o
+ *fill*         0x0044545b        0x1 
  .rodata.kern_right_class_mapping
-                0x0044541c       0x9b src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_20.o
- *fill*         0x004454b7        0x1 
+                0x0044545c       0x9b src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_20.o
+ *fill*         0x004454f7        0x1 
  .rodata.kern_class_values
-                0x004454b8      0xbad src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_20.o
- *fill*         0x00446065        0x3 
+                0x004454f8      0xbad src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_20.o
+ *fill*         0x004460a5        0x3 
  .rodata.kern_classes
-                0x00446068       0x10 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_20.o
+                0x004460a8       0x10 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_20.o
  .rodata.gylph_bitmap
-                0x00446078     0xf898 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_40.o
+                0x004460b8     0xf898 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_40.o
  .rodata.glyph_dsc
-                0x00455910      0x4d8 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_40.o
+                0x00455950      0x4d8 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_40.o
  .rodata.unicode_list_1
-                0x00455de8       0x76 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_40.o
- *fill*         0x00455e5e        0x2 
- .rodata.cmaps  0x00455e60       0x28 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_40.o
+                0x00455e28       0x76 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_40.o
+ *fill*         0x00455e9e        0x2 
+ .rodata.cmaps  0x00455ea0       0x28 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_40.o
  .rodata.kern_left_class_mapping
-                0x00455e88       0x9b src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_40.o
- *fill*         0x00455f23        0x1 
+                0x00455ec8       0x9b src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_40.o
+ *fill*         0x00455f63        0x1 
  .rodata.kern_right_class_mapping
-                0x00455f24       0x9b src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_40.o
- *fill*         0x00455fbf        0x1 
+                0x00455f64       0x9b src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_40.o
+ *fill*         0x00455fff        0x1 
  .rodata.kern_class_values
-                0x00455fc0      0xbad src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_40.o
- *fill*         0x00456b6d        0x3 
+                0x00456000      0xbad src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_40.o
+ *fill*         0x00456bad        0x3 
  .rodata.kern_classes
-                0x00456b70       0x10 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_40.o
- .rodata        0x00456b80       0x12 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
- *fill*         0x00456b92        0x2 
- .rodata        0x00456b94        0xe src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_indev.o
- *fill*         0x00456ba2        0x2 
+                0x00456bb0       0x10 src/ASF/thirdparty/lvgl/src/lv_font/lv_font_montserrat_40.o
+ .rodata        0x00456bc0       0x12 src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_disp.o
+ *fill*         0x00456bd2        0x2 
+ .rodata        0x00456bd4        0xe src/ASF/thirdparty/lvgl/src/lv_hal/lv_hal_indev.o
+ *fill*         0x00456be2        0x2 
  .rodata.lv_anim_path_def
-                0x00456ba4        0x8 src/ASF/thirdparty/lvgl/src/lv_misc/lv_anim.o
-                0x00456ba4                lv_anim_path_def
- .rodata        0x00456bac        0xe src/ASF/thirdparty/lvgl/src/lv_misc/lv_anim.o
- *fill*         0x00456bba        0x2 
- .rodata        0x00456bbc        0x2 src/ASF/thirdparty/lvgl/src/lv_misc/lv_color.o
- *fill*         0x00456bbe        0x2 
+                0x00456be4        0x8 src/ASF/thirdparty/lvgl/src/lv_misc/lv_anim.o
+                0x00456be4                lv_anim_path_def
+ .rodata        0x00456bec        0xe src/ASF/thirdparty/lvgl/src/lv_misc/lv_anim.o
+ *fill*         0x00456bfa        0x2 
+ .rodata        0x00456bfc        0x2 src/ASF/thirdparty/lvgl/src/lv_misc/lv_color.o
+ *fill*         0x00456bfe        0x2 
  .rodata.hex.5775
-                0x00456bc0       0x11 src/ASF/thirdparty/lvgl/src/lv_misc/lv_debug.o
- *fill*         0x00456bd1        0x3 
- .rodata        0x00456bd4       0x11 src/ASF/thirdparty/lvgl/src/lv_misc/lv_fs.o
- *fill*         0x00456be5        0x3 
+                0x00456c00       0x11 src/ASF/thirdparty/lvgl/src/lv_misc/lv_debug.o
+ *fill*         0x00456c11        0x3 
+ .rodata        0x00456c14       0x11 src/ASF/thirdparty/lvgl/src/lv_misc/lv_fs.o
+ *fill*         0x00456c25        0x3 
  .rodata.sin0_90_table
-                0x00456be8       0xb6 src/ASF/thirdparty/lvgl/src/lv_misc/lv_math.o
- *fill*         0x00456c9e        0x2 
- .rodata        0x00456ca0       0x81 src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
- *fill*         0x00456d21        0x3 
- .rodata        0x00456d24        0xe src/ASF/thirdparty/lvgl/src/lv_misc/lv_task.o
- *fill*         0x00456d32        0x2 
- .rodata        0x00456d34       0x18 src/ASF/thirdparty/lvgl/src/lv_misc/lv_txt.o
- .rodata        0x00456d4c        0xe src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
- *fill*         0x00456d5a        0x2 
- .rodata        0x00456d5c       0x27 src/ASF/thirdparty/lvgl/src/lv_widgets/lv_bar.o
- *fill*         0x00456d83        0x1 
- .rodata        0x00456d84       0x27 src/ASF/thirdparty/lvgl/src/lv_widgets/lv_btn.o
- *fill*         0x00456dab        0x1 
- .rodata        0x00456dac       0x28 src/ASF/thirdparty/lvgl/src/lv_widgets/lv_cont.o
- .rodata        0x00456dd4       0x2b src/ASF/thirdparty/lvgl/src/lv_widgets/lv_img.o
- *fill*         0x00456dff        0x1 
- .rodata        0x00456e00       0x31 src/ASF/thirdparty/lvgl/src/lv_widgets/lv_label.o
- *fill*         0x00456e31        0x3 
- .rodata        0x00456e34       0x29 src/ASF/thirdparty/lvgl/src/lv_widgets/lv_page.o
- *fill*         0x00456e5d        0x3 
- .rodata        0x00456e60      0x150 src/main.o
+                0x00456c28       0xb6 src/ASF/thirdparty/lvgl/src/lv_misc/lv_math.o
+ *fill*         0x00456cde        0x2 
+ .rodata        0x00456ce0       0x81 src/ASF/thirdparty/lvgl/src/lv_misc/lv_mem.o
+ *fill*         0x00456d61        0x3 
+ .rodata        0x00456d64        0xe src/ASF/thirdparty/lvgl/src/lv_misc/lv_task.o
+ *fill*         0x00456d72        0x2 
+ .rodata        0x00456d74       0x18 src/ASF/thirdparty/lvgl/src/lv_misc/lv_txt.o
+ .rodata        0x00456d8c        0xe src/ASF/thirdparty/lvgl/src/lv_themes/lv_theme_material.o
+ *fill*         0x00456d9a        0x2 
+ .rodata        0x00456d9c       0x27 src/ASF/thirdparty/lvgl/src/lv_widgets/lv_bar.o
+ *fill*         0x00456dc3        0x1 
+ .rodata        0x00456dc4       0x27 src/ASF/thirdparty/lvgl/src/lv_widgets/lv_btn.o
+ *fill*         0x00456deb        0x1 
+ .rodata        0x00456dec       0x28 src/ASF/thirdparty/lvgl/src/lv_widgets/lv_cont.o
+ .rodata        0x00456e14       0x2b src/ASF/thirdparty/lvgl/src/lv_widgets/lv_img.o
+ *fill*         0x00456e3f        0x1 
+ .rodata        0x00456e40       0x31 src/ASF/thirdparty/lvgl/src/lv_widgets/lv_label.o
+ *fill*         0x00456e71        0x3 
+ .rodata        0x00456e74       0x29 src/ASF/thirdparty/lvgl/src/lv_widgets/lv_page.o
+ *fill*         0x00456e9d        0x3 
+ .rodata        0x00456ea0      0x150 src/main.o
  .rodata._global_impure_ptr
-                0x00456fb0        0x4 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-impure.o)
-                0x00456fb0                _global_impure_ptr
+                0x00456ff0        0x4 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-impure.o)
+                0x00456ff0                _global_impure_ptr
  .rodata._vfiprintf_r.str1.4
-                0x00456fb4       0x2f d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-vfiprintf.o)
- *fill*         0x00456fe3        0x1 
+                0x00456ff4       0x2f d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-vfiprintf.o)
+ *fill*         0x00457023        0x1 
  .rodata.blanks.7217
-                0x00456fe4       0x10 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-vfiprintf.o)
+                0x00457024       0x10 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-vfiprintf.o)
  .rodata.zeroes.7218
-                0x00456ff4       0x10 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-vfiprintf.o)
+                0x00457034       0x10 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-vfiprintf.o)
  .rodata._setlocale_r.str1.4
-                0x00457004        0xa d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-locale.o)
+                0x00457044        0xa d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-locale.o)
                                   0xd (size before relaxing)
- *fill*         0x0045700e        0x2 
+ *fill*         0x0045704e        0x2 
  .rodata.str1.4
-                0x00457010        0x4 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-locale.o)
+                0x00457050        0x4 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-locale.o)
                                   0x2 (size before relaxing)
  .rodata._ctype_
-                0x00457014      0x101 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-ctype_.o)
-                0x00457014                _ctype_
+                0x00457054      0x101 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-ctype_.o)
+                0x00457054                _ctype_
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x00457118                . = ALIGN (0x4)
- *fill*         0x00457115        0x3 
+                0x00457158                . = ALIGN (0x4)
+ *fill*         0x00457155        0x3 
  *(.init)
- .init          0x00457118        0x4 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crti.o
-                0x00457118                _init
- .init          0x0045711c        0x8 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtn.o
-                0x00457124                . = ALIGN (0x4)
-                0x00457124                __preinit_array_start = .
+ .init          0x00457158        0x4 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crti.o
+                0x00457158                _init
+ .init          0x0045715c        0x8 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtn.o
+                0x00457164                . = ALIGN (0x4)
+                0x00457164                __preinit_array_start = .
  *(.preinit_array)
-                0x00457124                __preinit_array_end = .
-                0x00457124                . = ALIGN (0x4)
-                0x00457124                __init_array_start = .
+                0x00457164                __preinit_array_end = .
+                0x00457164                . = ALIGN (0x4)
+                0x00457164                __init_array_start = .
  *(SORT(.init_array.*))
  .init_array.00000
-                0x00457124        0x4 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-__call_atexit.o)
+                0x00457164        0x4 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc.a(lib_a-__call_atexit.o)
  *(.init_array)
- .init_array    0x00457128        0x4 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtbegin.o
-                0x0045712c                __init_array_end = .
-                0x0045712c                . = ALIGN (0x4)
+ .init_array    0x00457168        0x4 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtbegin.o
+                0x0045716c                __init_array_end = .
+                0x0045716c                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
  *crtend.o(.ctors)
-                0x0045712c                . = ALIGN (0x4)
+                0x0045716c                . = ALIGN (0x4)
  *(.fini)
- .fini          0x0045712c        0x4 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crti.o
-                0x0045712c                _fini
- .fini          0x00457130        0x8 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtn.o
-                0x00457138                . = ALIGN (0x4)
-                0x00457138                __fini_array_start = .
+ .fini          0x0045716c        0x4 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crti.o
+                0x0045716c                _fini
+ .fini          0x00457170        0x8 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtn.o
+                0x00457178                . = ALIGN (0x4)
+                0x00457178                __fini_array_start = .
  *(.fini_array)
- .fini_array    0x00457138        0x4 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtbegin.o
+ .fini_array    0x00457178        0x4 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtbegin.o
  *(SORT(.fini_array.*))
-                0x0045713c                __fini_array_end = .
+                0x0045717c                __fini_array_end = .
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT(.dtors.*))
  *crtend.o(.dtors)
-                0x0045713c                . = ALIGN (0x4)
-                0x0045713c                _efixed = .
+                0x0045717c                . = ALIGN (0x4)
+                0x0045717c                _efixed = .
                 [!provide]                PROVIDE (__exidx_start, .)
 
-.vfp11_veneer   0x0045713c        0x0
- .vfp11_veneer  0x0045713c        0x0 linker stubs
+.vfp11_veneer   0x0045717c        0x0
+ .vfp11_veneer  0x0045717c        0x0 linker stubs
 
-.v4_bx          0x0045713c        0x0
- .v4_bx         0x0045713c        0x0 linker stubs
+.v4_bx          0x0045717c        0x0
+ .v4_bx         0x0045717c        0x0 linker stubs
 
-.iplt           0x0045713c        0x0
- .iplt          0x0045713c        0x0 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtbegin.o
+.iplt           0x0045717c        0x0
+ .iplt          0x0045717c        0x0 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtbegin.o
 
-.ARM.exidx      0x0045713c        0x8
+.ARM.exidx      0x0045717c        0x8
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
- .ARM.exidx     0x0045713c        0x8 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m\libgcc.a(_udivmoddi4.o)
+ .ARM.exidx     0x0045717c        0x8 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m\libgcc.a(_udivmoddi4.o)
                 [!provide]                PROVIDE (__exidx_end, .)
 
-.eh_frame       0x00457144        0x0
- .eh_frame      0x00457144        0x0 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtbegin.o
+.eh_frame       0x00457184        0x0
+ .eh_frame      0x00457184        0x0 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtbegin.o
 
-.rel.dyn        0x00457144        0x0
- .rel.iplt      0x00457144        0x0 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtbegin.o
+.rel.dyn        0x00457184        0x0
+ .rel.iplt      0x00457184        0x0 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtbegin.o
 
-.jcr            0x00457144        0x0
- .jcr           0x00457144        0x0 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtbegin.o
+.jcr            0x00457184        0x0
+ .jcr           0x00457184        0x0 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtbegin.o
 
-.igot.plt       0x00457144        0x0
- .igot.plt      0x00457144        0x0 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtbegin.o
-                0x00457144                . = ALIGN (0x4)
-                0x00457144                _etext = .
+.igot.plt       0x00457184        0x0
+ .igot.plt      0x00457184        0x0 d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtbegin.o
+                0x00457184                . = ALIGN (0x4)
+                0x00457184                _etext = .
 
-.relocate       0x20400000      0xa80 load address 0x00457144
+.relocate       0x20400000      0xa80 load address 0x00457184
                 0x20400000                . = ALIGN (0x4)
                 0x20400000                _srelocate = .
  *(.ramfunc .ramfunc.*)
@@ -30000,7 +29999,7 @@ LOAD d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-ea
                 0x20400a80                . = ALIGN (0x4)
                 0x20400a80                _erelocate = .
 
-.bss            0x20400a80    0x3b168 load address 0x00457bc4
+.bss            0x20400a80    0x3b168 load address 0x00457c04
                 0x20400a80                . = ALIGN (0x4)
                 0x20400a80                _sbss = .
                 0x20400a80                _szero = .
@@ -30269,7 +30268,7 @@ LOAD d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-ea
                 0x2043bbe8                _ebss = .
                 0x2043bbe8                _ezero = .
 
-.stack          0x2043bbe8     0x2000 load address 0x00492d2c
+.stack          0x2043bbe8     0x2000 load address 0x00492d6c
                 0x2043bbe8                . = ALIGN (0x8)
                 0x2043bbe8                _sstack = .
                 0x2043dbe8                . = (. + STACK_SIZE)
@@ -30277,7 +30276,7 @@ LOAD d:/programas/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-ea
                 0x2043dbe8                . = ALIGN (0x8)
                 0x2043dbe8                _estack = .
 
-.heap           0x2043dbe8      0x200 load address 0x00494d2c
+.heap           0x2043dbe8      0x200 load address 0x00494d6c
                 0x2043dbe8                . = ALIGN (0x8)
                 0x2043dbe8                _sheap = .
                 0x2043dde8                . = (. + HEAP_SIZE)
@@ -30616,7 +30615,7 @@ OUTPUT(demo-interface.elf elf32-littlearm)
  .comment       0x00000059       0x5a src/ASF/sam/utils/syscalls/gcc/syscalls.o
  .comment       0x00000059       0x5a src/main.o
 
-.debug_info     0x00000000    0x95541
+.debug_info     0x00000000    0x95553
  .debug_info    0x00000000      0xcaf src/ASF/sam/drivers/rtt/rtt.o
  .debug_info    0x00000caf     0x125c src/cafe_image.o
  .debug_info    0x00001f0b     0x1d6d src/touch/touch.o
@@ -30689,7 +30688,7 @@ OUTPUT(demo-interface.elf elf32-littlearm)
  .debug_info    0x0008d348     0x1611 src/ASF/sam/utils/cmsis/same70/source/templates/gcc/startup_same70.o
  .debug_info    0x0008e959      0x5d2 src/ASF/sam/utils/cmsis/same70/source/templates/system_same70.o
  .debug_info    0x0008ef2b      0xdbb src/ASF/sam/utils/syscalls/gcc/syscalls.o
- .debug_info    0x0008fce6     0x585b src/main.o
+ .debug_info    0x0008fce6     0x586d src/main.o
 
 .debug_abbrev   0x00000000     0xcaaf
  .debug_abbrev  0x00000000      0x203 src/ASF/sam/drivers/rtt/rtt.o
@@ -31239,7 +31238,7 @@ OUTPUT(demo-interface.elf elf32-littlearm)
  .debug_macro   0x000197c4      0x1e1 src/main.o
  .debug_macro   0x000199a5       0xd6 src/main.o
 
-.debug_line     0x00000000    0x451a3
+.debug_line     0x00000000    0x451a5
  .debug_line    0x00000000      0xa41 src/ASF/sam/drivers/rtt/rtt.o
  .debug_line    0x00000a41     0x129b src/cafe_image.o
  .debug_line    0x00001cdc     0x13cb src/touch/touch.o
@@ -31312,7 +31311,7 @@ OUTPUT(demo-interface.elf elf32-littlearm)
  .debug_line    0x00041365      0xa86 src/ASF/sam/utils/cmsis/same70/source/templates/gcc/startup_same70.o
  .debug_line    0x00041deb      0x7e5 src/ASF/sam/utils/cmsis/same70/source/templates/system_same70.o
  .debug_line    0x000425d0      0x3bb src/ASF/sam/utils/syscalls/gcc/syscalls.o
- .debug_line    0x0004298b     0x2818 src/main.o
+ .debug_line    0x0004298b     0x281a src/main.o
 
 .debug_str      0x00000000    0xafbd9
  .debug_str     0x00000000    0x87ef4 src/ASF/sam/drivers/rtt/rtt.o

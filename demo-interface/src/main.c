@@ -242,10 +242,6 @@ static void task_main(void *pvParameters) {
 		state = EXIBE_TELA2;
 		price = produto_id;
 	}
-
-	/*else {
-		state = INICIAL;
-	}*/
 	break;
       
     case EXIBE_TELA2:
@@ -253,7 +249,7 @@ static void task_main(void *pvParameters) {
 	state = CONFIGURANDO;
 	break;
 
-	case CONFIGURANDO:;
+	case CONFIGURANDO:
 	//RTT_init(pllPreScale, irqRTTvalue);
 	/*if(xSemaphoreTake(xSemaphoreSugarTimeout, 1000)){
 		state = INICIAL;
@@ -265,7 +261,7 @@ static void task_main(void *pvParameters) {
 		if( xSemaphoreTake(xSemaphoreSuccess, 1000) ) {
 			state = EXIBE_TELA3;
 		} else {
-			state = INICIAL;
+			state = EXIBE_TELA1;
 		}
 	}
 	
@@ -282,12 +278,12 @@ static void task_main(void *pvParameters) {
     case PAGAMENTO:
 	send_package(payment_confirmed, 4);
 	if(xSemaphoreTake(xSemaphoreSuccess, 1000)){
-		state = EXIBE_TELA4;
-		//xSemaphoreGive(xSemaphorePago);
+		/*state = EXIBE_TELA4;*/
+		xSemaphoreGive(xSemaphorePago);
 	}
-	/*if( xSemaphoreTake(xSemaphorePago, 1000) ){
+	if( xSemaphoreTake(xSemaphorePago, 1000) ){
 		state = EXIBE_TELA4;
-	}*/
+	}
 	if(xSemaphoreTake(xSemaphoreFail, 1000)){
 		state = EXIBE_TELA1;
 	}

@@ -2147,7 +2147,7 @@ all: $(OUTPUT_FILE_PATH) $(ADDITIONAL_DEPENDENCIES)
 $(OUTPUT_FILE_PATH): $(OBJS) $(USER_OBJS) $(OUTPUT_FILE_DEP) $(LIB_DEP) $(LINKER_SCRIPT_DEP)
 	@echo Building target: $@
 	@echo Invoking: ARM/GNU Linker : 6.3.1
-	$(QUOTE)D:\Programas\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-gcc.exe$(QUOTE) -o$(OUTPUT_FILE_PATH_AS_ARGS) @"C:\Users\anton\Desktop\embarcados\simulado-av2-consulta\demo-interface\Debug\ld_ar.mk"  $(USER_OBJS) $(LIBS) -mthumb -Wl,-Map="demo-interface.map" -Wl,--start-group -larm_cortexM7lfsp_math_softfp -lm  -Wl,--end-group -L"../src/ASF/thirdparty/CMSIS/Lib/GCC"  -Wl,--gc-sections -mcpu=cortex-m7 -Wl,--entry=Reset_Handler -Wl,--cref -mthumb -T../src/ASF/sam/utils/linker_scripts/same70/same70q21/gcc/flash.ld  
+	$(QUOTE)D:\Programas\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-gcc.exe$(QUOTE) -o$(OUTPUT_FILE_PATH_AS_ARGS) @"C:\Users\anton\Desktop\embarcados\simulado-av2\demo-interface\Debug\ld_ar.mk"  $(USER_OBJS) $(LIBS) -mthumb -Wl,-Map="demo-interface.map" -Wl,--start-group -larm_cortexM7lfsp_math_softfp -lm  -Wl,--end-group -L"../src/ASF/thirdparty/CMSIS/Lib/GCC"  -Wl,--gc-sections -mcpu=cortex-m7 -Wl,--entry=Reset_Handler -Wl,--cref -mthumb -T../src/ASF/sam/utils/linker_scripts/same70/same70q21/gcc/flash.ld  
 	@echo Finished building target: $@
 	"D:\Programas\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-objcopy.exe" -O binary "demo-interface.elf" "demo-interface.bin"
 	"D:\Programas\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-objcopy.exe" -O ihex -R .eeprom -R .fuse -R .lock -R .signature  "demo-interface.elf" "demo-interface.hex"
@@ -2167,5 +2167,5 @@ clean:
 	-$(RM) $(OBJS_AS_ARGS) $(EXECUTABLES)  
 	-$(RM) $(C_DEPS_AS_ARGS)   
 	rm -rf "demo-interface.elf" "demo-interface.a" "demo-interface.hex" "demo-interface.bin" "demo-interface.lss" "demo-interface.eep" "demo-interface.map" "demo-interface.srec"
-	rm -rf "C:\Users\anton\Desktop\embarcados\simulado-av2-consulta\demo-interface\Debug\ld_ar.mk"
+	rm -rf "C:\Users\anton\Desktop\embarcados\simulado-av2\demo-interface\Debug\ld_ar.mk"
 	
