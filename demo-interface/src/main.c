@@ -80,6 +80,8 @@ SemaphoreHandle_t xSemaphoreCancel;
 SemaphoreHandle_t xSemaphoreFail;
 SemaphoreHandle_t xSemaphoreSugarTimeout;
 
+QueueHandle_t xQueueFeedback;
+
 // LVGL globals
 lv_obj_t * labelDebug;
 lv_obj_t * bar_regulagem;
@@ -167,6 +169,7 @@ static void task_receive(void *pvParameters) {
   char p_data[32];
   char p_cnt = 0;
   char p_do = 0;
+  int feedback_response = 10; //qualquer numero que nao seja 0, 1, 2 e 255
   
   for (;;)  {
     char c;
@@ -179,15 +182,21 @@ static void task_receive(void *pvParameters) {
     
     if (p_do == 1) {
 		if(p_data[2] == 255){
-			xSemaphoreGive(xSemaphoreSuccess);	
+			feedback_response = 255;
+			xQueueSend(xQueueFeedback, &feedback_response, 1000);
+			//xSemaphoreGive(xSemaphoreSuccess);	
 		}
 		
 		if(p_data[2] == 0){
-			xSemaphoreGive(xSemaphoreFail);
+			feedback_response = 0;
+			xQueueSend(xQueueFeedback, &feedback_response, 1000);
+			//xSemaphoreGive(xSemaphoreFail);
 		}
 		
 		if(p_data[2] == 2){
-			xSemaphoreGive(xSemaphoreCancel);
+			feedback_response = 2;
+			xQueueSend(xQueueFeedback, &feedback_response, 1000);
+			//xSemaphoreGive(xSemaphoreCancel);
 		}
       //lv_label_set_text_fmt(labelDebug, "%02X %02X %02X %02X",p_data[0], p_data[1], p_data[2], p_data[3] );
       p_cnt = 0;
@@ -217,6 +226,7 @@ static void task_main(void *pvParameters) {
 
   int produto_id = 0;
   int produto_acucar = 0;
+  int feedback = 10; //qualquer numero que nao seja 0, 1, 2 e 255;
   
   char handshake[] = {'U', 0, 0, 'X'};
   char payment_confirmed[] = {'U', 2, 0, 'X'};
@@ -231,10 +241,16 @@ static void task_main(void *pvParameters) {
     case EXIBE_TELA1:
 	lv_page_1_inicial();
 	send_package(handshake, 4);
-	if(xSemaphoreTake(xSemaphoreSuccess, 3000)){
+	if(xQueueReceive(xQueueFeedback, &feedback, 1000)){
+		if(feedback == 255){
+			pio_clear(LED_PIO, LED_IDX_MASK);
+			state = INICIAL;
+		}
+	}
+	/*if(xSemaphoreTake(xSemaphoreSuccess, 3000)){
 		pio_clear(LED_PIO, LED_IDX_MASK);
 		state = INICIAL;
-	}
+	}*/
 	break;
       
     case INICIAL:
@@ -258,13 +274,17 @@ static void task_main(void *pvParameters) {
 		produto_acucar = lv_bar_get_value(bar_regulagem);
 		char payment[] = {'U', 1, price, 'X'}; //pacote de cobrança de R$2,00
 		send_package(payment, 4); //envia o pacote de cobrança
-		if( xSemaphoreTake(xSemaphoreSuccess, 1000) ) {
+		if(xQueueReceive(xQueueFeedback, &feedback, 1000)){
+			if(feedback == 255){
+				state = EXIBE_TELA3;
+			}
+		}
+		/*if( xSemaphoreTake(xSemaphoreSuccess, 1000) ) {
 			state = EXIBE_TELA3;
 		} else {
 			state = EXIBE_TELA1;
-		}
+		}*/
 	}
-	
 	if(xSemaphoreTake(xSemaphoreCancel, 1000)){
 		state = EXIBE_TELA5;
 	}
@@ -277,19 +297,30 @@ static void task_main(void *pvParameters) {
       
     case PAGAMENTO:
 	send_package(payment_confirmed, 4);
+	if(xQueueReceive(xQueueFeedback, &feedback, 1000)){
+		if(feedback == 255){
+			xSemaphoreGive(xSemaphorePago);
+		}
+		if(feedback == 2){
+			state = EXIBE_TELA5;
+		}
+		if(feedback == 0){
+			state = EXIBE_TELA1;
+		}
+	}
 	if(xSemaphoreTake(xSemaphoreSuccess, 1000)){
 		/*state = EXIBE_TELA4;*/
 		xSemaphoreGive(xSemaphorePago);
 	}
-	if( xSemaphoreTake(xSemaphorePago, 1000) ){
+	/*if( xSemaphoreTake(xSemaphorePago, 1000) ){
 		state = EXIBE_TELA4;
-	}
-	if(xSemaphoreTake(xSemaphoreFail, 1000)){
+	}*/
+	/*if(xSemaphoreTake(xSemaphoreFail, 1000)){
 		state = EXIBE_TELA1;
-	}
-	if(xSemaphoreTake(xSemaphoreCancel, 1000)){
+	}*/
+	/*if(xSemaphoreTake(xSemaphoreCancel, 1000)){
 		state = EXIBE_TELA5;
-	}
+	}*/
 	//vTaskDelay(4000);
 	break;
       
@@ -541,7 +572,7 @@ void lv_page_canceled(void){
 	
 	lv_obj_t * label_canceled;
 	label_canceled = lv_label_create(lv_scr_act(), NULL);
-	lv_obj_align(label_canceled, NULL, LV_ALIGN_IN_LEFT_MID, 0, 0);
+	lv_obj_align(label_canceled, NULL, LV_ALIGN_IN_LEFT_MID, 30, 0);
 	lv_obj_set_style_local_text_font(label_canceled, LV_OBJ_PART_MAIN, LV_STATE_DEFAULT, &lv_font_montserrat_20);
 	lv_obj_set_style_local_text_color(label_canceled, LV_OBJ_PART_MAIN, LV_STATE_DEFAULT, LV_COLOR_BLACK);
 	lv_label_set_text_fmt(label_canceled, "Seu pedido foi cancelado");
@@ -673,6 +704,7 @@ void init(void){
 int main(void) {
   
   xQueueRx = xQueueCreate(32, sizeof(char));
+  xQueueFeedback = xQueueCreate(32, sizeof(char));
   
   /* board and sys init */
   board_init();
